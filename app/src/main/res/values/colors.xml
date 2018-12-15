@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDark">#00363a</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Text color for the News Heading -->
+    <color name="color_news_heading">#263238</color>
+
+    <!-- Text color for the News Section and Date -->
+    <color name="color_section_date">#4f5b62</color>
+
+    <!-- Horizontal Separator -->
+    <color name="color_horizontal_separator">#c1d5e0</color>
+</resources>

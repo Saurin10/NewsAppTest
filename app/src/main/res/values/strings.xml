@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">News App</string>
+
+    <!-- API - Key-->
+    <string name="api_key">a79daca4-539c-4de3-bf8d-89c636845255</string>
+
+    <!-- Text to display in the list when there are no newsList -->
+    <string name="no_news">No News found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No Internet Connection.</string>
+
+    <!-- Hint for Search -->
+    <string name="setting_search_menu_hint">e.g. politics, debate, android</string>
+
+    <!-- Settings Menu Item -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+    <!-- Settings Query -->
+    <string name="settings_news_query_label">Search</string>
+    <string name="settings_news_query_key" translatable="false">q</string>
+    <string name="settings_news_query_default_value" translatable="false">news</string>
+    <!-- Settings Page Size-->
+    <string name="settings_news_page_size_label">Number of Headlines</string>
+    <string name="settings_news_page_size_key" translatable="false">page-size</string>
+    <string name="settings_news_page_size_default_value" translatable="false">10</string>
+
+    <!-- Strings For Order-By Preference -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default_value" translatable="false">@string/settings_order_by_news_newest_value</string>
+
+    <!-- Label for order-by Latest News option -->
+    <string name="settings_order_by_news_newest_label">Most Recent</string>
+    <string name="settings_order_by_news_newest_value" translatable="false">newest</string>
+
+    <!-- Label for order-by oldest of news option -->
+    <string name="settings_order_by_news_oldest_label">Oldest First</string>
+    <string name="settings_order_by_news_oldest_value" translatable="false">oldest</string>
+
+    <!-- Label for order-by relevance of news option -->
+    <string name="settings_order_by_news_relevance_label">Relevance First</string>
+    <string name="settings_order_by_news_relevance_value" translatable="false">relevance</string>
+
+</resources>

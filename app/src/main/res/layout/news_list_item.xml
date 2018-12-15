@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/padding_left_right_start_end"
+    android:paddingLeft="@dimen/padding_left_right_start_end"
+    android:paddingRight="@dimen/padding_left_right_start_end"
+    android:paddingStart="@dimen/padding_left_right_start_end">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/margin_bottom_heading"
+        android:layout_marginTop="@dimen/margin_top_heading"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="left"
+        android:textColor="@color/color_news_heading"
+        android:textSize="@dimen/news_heading_text_size"
+        android:textStyle="bold"
+        tools:text="News" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_section_date_bottom_top"
+        android:paddingTop="@dimen/padding_section_date_bottom_top">
+
+        <TextView
+            android:id="@+id/news_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textAllCaps="true"
+            android:textColor="@color/color_section_date"
+            android:textSize="@dimen/news_date_text_size"
+            android:textStyle="bold"
+            tools:text="News_Section" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="right"
+            android:textColor="@color/color_section_date"
+            android:textSize="@dimen/news_date_text_size"
+            android:textStyle="italic"
+            tools:text="Mar 6, 2010" />
+
+    </LinearLayout>
+
+</LinearLayout>

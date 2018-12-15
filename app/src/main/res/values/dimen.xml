@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size for News heading, section and date -->
+    <dimen name="news_heading_text_size">22sp</dimen>
+    <dimen name="news_date_text_size">16sp</dimen>
+
+    <!-- Overall Padding in news_list_item -->
+    <dimen name="padding_left_right_start_end">16dp</dimen>
+
+    <!-- Overall Padding in news_list_item -->
+    <dimen name="padding_section_date_bottom_top">16dp</dimen>
+
+    <!-- Margin Top for News heading -->
+    <dimen name="margin_top_heading">16dp</dimen>
+    <dimen name="margin_bottom_heading">16dp</dimen>
+
+    <!-- Height for horizontal divider between the items -->
+    <dimen name="height_horizontal_divider">1dp</dimen>
+</resources>
