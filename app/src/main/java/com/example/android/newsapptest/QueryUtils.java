@@ -152,15 +152,14 @@ public class QueryUtils {
                 // Extract the value for the key called "webPublicationDate"
                 String date = currentNews.optString("webPublicationDate");
                 // Extract the value for the key called "webUrl"
-                String url = currentNews.optString("webUrl")
-                        ;
+                String url = currentNews.optString("webUrl");
                 // Extract the value for the key called "tags" (JSONArray)
                 JSONArray arrayTags = currentNews.getJSONArray("tags");
                 String authorName = null;
 
                 //Check if Tag is available or not
                 if (arrayTags.length() != 0) {
-                    for (int t =0; t < arrayTags.length(); t++){
+                    for (int t = 0; t < arrayTags.length(); t++) {
                         JSONObject objectTag = arrayTags.getJSONObject(t);
                         authorName = authorName + objectTag.optString("webTitle");
                     }

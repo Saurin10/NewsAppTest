@@ -27,11 +27,11 @@
         android:id="@+id/author_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_author_name"
         android:fontFamily="cursive"
         android:textAllCaps="true"
         android:textColor="@color/color_author_name"
         android:textSize="@dimen/news_date_text_size"
-        android:layout_marginBottom="@dimen/margin_bottom_author_name"
         android:textStyle="bold"
         tools:text="Author_Name" />
 
