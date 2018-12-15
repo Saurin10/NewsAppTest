@@ -2,7 +2,7 @@
     <string name="app_name">News App</string>
 
     <!-- API - Key-->
-    <string name="api_key">a79daca4-539c-4de3-bf8d-89c636845255</string>
+    <!--string name="api_key">a79daca4-539c-4de3-bf8d-89c636845255</string-->
 
     <!-- Text to display in the list when there are no newsList -->
     <string name="no_news">No News found.</string>

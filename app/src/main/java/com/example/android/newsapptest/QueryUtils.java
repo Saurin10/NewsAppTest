@@ -146,17 +146,28 @@ public class QueryUtils {
                 JSONObject currentNews = newsArray.getJSONObject(i);
 
                 // Extract the value for the key called "webTitle"
-                String headline = currentNews.getString("webTitle");
+                String headline = currentNews.optString("webTitle");
                 // Extract the value for the key called "sectionName"
-                String type = currentNews.getString("sectionName");
+                String type = currentNews.optString("sectionName");
                 // Extract the value for the key called "webPublicationDate"
-                String date = currentNews.getString("webPublicationDate");
-                //// Extract the value for the key called "webUrl"
-                String url = currentNews.getString("webUrl");
+                String date = currentNews.optString("webPublicationDate");
+                // Extract the value for the key called "webUrl"
+                String url = currentNews.optString("webUrl")
+                        ;
+                // Extract the value for the key called "tags" (JSONArray)
+                JSONArray arrayTags = currentNews.getJSONArray("tags");
+                String authorName = null;
 
+                //Check if Tag is available or not
+                if (arrayTags.length() != 0) {
+                    for (int t =0; t < arrayTags.length(); t++){
+                        JSONObject objectTag = arrayTags.getJSONObject(t);
+                        authorName = authorName + objectTag.optString("webTitle");
+                    }
+                }
                 // Create a new {@link News} object with the WebTitle, sectionName,
                 // webPublicationDate, and webUrl from the JSON response.
-                News newsAdd = new News(headline, type, date, url);
+                News newsAdd = new News(headline, type, date, url, authorName);
                 // Add the new {@link News} to the list of news.
                 newsArrayList.add(newsAdd);
             }

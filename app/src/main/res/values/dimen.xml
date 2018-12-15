@@ -10,9 +10,12 @@
     <!-- Overall Padding in news_list_item -->
     <dimen name="padding_section_date_bottom_top">16dp</dimen>
 
-    <!-- Margin Top for News heading -->
+    <!-- Margin Top and Bottom from News heading -->
     <dimen name="margin_top_heading">16dp</dimen>
-    <dimen name="margin_bottom_heading">16dp</dimen>
+    <dimen name="margin_bottom_heading">10dp</dimen>
+
+    <!-- Margin Bottom from author Name -->
+    <dimen name="margin_bottom_author_name">8dp</dimen>
 
     <!-- Height for horizontal divider between the items -->
     <dimen name="height_horizontal_divider">1dp</dimen>

@@ -23,6 +23,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.android.newsapptest.BuildConfig.MY_GUARDIAN_API_KEY;
+
 public class NewsActivity extends AppCompatActivity
         implements LoaderManager.LoaderCallbacks<List<News>> {
     //Guardian News URL
@@ -131,7 +133,8 @@ public class NewsActivity extends AppCompatActivity
         uriBuilder.appendQueryParameter("q", searchQuery);
         uriBuilder.appendQueryParameter("order-by", orderBy);
         uriBuilder.appendQueryParameter("page-size", pageSize);
-        uriBuilder.appendQueryParameter("api-key", getString(R.string.api_key));
+        uriBuilder.appendQueryParameter("show-tags", "contributor");
+        uriBuilder.appendQueryParameter("api-key", MY_GUARDIAN_API_KEY);
         // Create a new loader for the given URL
         return new NewsLoader(this, uriBuilder.toString());
     }

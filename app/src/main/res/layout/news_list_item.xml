@@ -20,8 +20,20 @@
         android:gravity="left"
         android:textColor="@color/color_news_heading"
         android:textSize="@dimen/news_heading_text_size"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         tools:text="News" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textAllCaps="true"
+        android:textColor="@color/color_author_name"
+        android:textSize="@dimen/news_date_text_size"
+        android:layout_marginBottom="@dimen/margin_bottom_author_name"
+        android:textStyle="bold"
+        tools:text="Author_Name" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +47,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="cursive"
+            android:fontFamily="serif-monospace"
             android:textAllCaps="true"
             android:textColor="@color/color_section_date"
             android:textSize="@dimen/news_date_text_size"
